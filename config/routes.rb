@@ -3,11 +3,9 @@ Rails.application.routes.draw do
   resources :categories
   resources :products
 
-  get 'storefront/all_items'
-
-  get 'storefront/items_by_category'
-
   get 'storefront/items_by_brand'
+
+  get 'categorical' => 'storefront#items_by_category'
 
   root 'storefront#all_items'
 
