@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'categorical' => 'storefront#items_by_category'
 
+  get 'branding' => 'storefront#items_by_brand'
+
   root 'storefront#all_items'
 
 
